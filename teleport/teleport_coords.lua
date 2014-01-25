@@ -3,7 +3,7 @@ PLUGIN.Description = "Teleport user to a specific set of coordinates"
 PLUGIN.Author = "Monstrado"
 
 function PLUGIN:Init()
-    self.SavedCoordsFile = datafile("saved_coords")
+    self.SavedCoordsFile = util.GetDatafile("saved_coords")
     oxmin_mod = cs.findplugin("oxmin")
     if not oxmin_mod or not oxmin then
 	print("Critical Failure! Oxmin required to run use this plugin")
